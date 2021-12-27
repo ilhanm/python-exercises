@@ -1,8 +1,9 @@
-#########27.12.2021#########
-##1] my products class has 3 main attributes which is name, price, quantity
-##2] i gave my program a csv file for creating instances by reading it from there
-##3] then i take output of all my objects formatted in json
-#########
+############################
+###csv dosyasında oluşturacağım nesneleri verdim
+###dışardan aldığım verilerle nesneler oluşturdum
+###bu nesnelerin hepsinin price bilgisinde %20 indirim uyguladım
+###nesneleri json olarak output aldım.
+############################
 
 import csv
 import json
@@ -26,8 +27,8 @@ class Product:
     def apply_discount(self):
         self.price=self.price*self.payment_rate
     
-    def __repr__(self) -> str:
-        return f"[name:'{self.name}', price: {self.price}, quantity: {self.quantity}]"
+    # def __repr__(self) -> str:
+    #     return f"[name:'{self.name}', price: {self.price}, quantity: {self.quantity}]"
     
     def toJSON(self):   #got this code piece from stackoverflow
         return json.dumps(self, default=lambda o: o.__dict__, 
@@ -37,7 +38,10 @@ with open('csvtojson_of_all_instances/products.csv') as csv_file:
     csv_reader = list(csv.reader(csv_file, delimiter=','))
     for item in csv_reader[1:]:
         myprod=Product(item[0],int(item[1]),int(item[2]))
-newproduct=Product("telefon",1230,22)
+
+for elem in Product.productlist:
+    Product.apply_discount(elem)
+    
 
 
 with open("csvtojson_of_all_instances/output.json", "w") as outfile:
