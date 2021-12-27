@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Iphone12",
+        "price": 1000,
+        "quantity": 18
+    },
+    {
+        "name": "Iphone13",
+        "price": 1500,
+        "quantity": 13
+    },
+    {
+        "name": "Iphone11",
+        "price": 800,
+        "quantity": 21
+    },
+    {
+        "name": "Asus Laptop",
+        "price": 1000,
+        "quantity": 22
+    },
+    {
+        "name": "Dell Laptop",
+        "price": 1100,
+        "quantity": 19
+    },
+    {
+        "name": "Hp Laptop",
+        "price": 950,
+        "quantity": 24
+    },
+    {
+        "name": "Ipad 8",
+        "price": 450,
+        "quantity": 33
+    },
+    {
+        "name": "Ipad 9",
+        "price": 550,
+        "quantity": 40
+    },
+    {
+        "name": "Macbook Pro",
+        "price": 2550,
+        "quantity": 25
+    },
+    {
+        "name": "Corsair Keyboard",
+        "price": 90,
+        "quantity": 55
+    },
+    {
+        "name": "Steelseries Mouse",
+        "price": 60,
+        "quantity": 34
+    },
+    {
+        "name": "Blue Yeti",
+        "price": 120,
+        "quantity": 50
+    },
+    {
+        "name": "telefon",
+        "price": 1230,
+        "quantity": 22
+    }
+]
