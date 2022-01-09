@@ -10,3 +10,5 @@ file1Difference=[num for num in set(nums1) if num not in nums2]
 print(commonNumbers)
 print(file1Difference)
 
+#artistik patinaj?
+#[int(num) for num in open("numbers1.txt") if num in open("numbers2.txt")]
